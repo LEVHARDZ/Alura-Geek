@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilosgeek.css">
+    <title>Alura Geek</title>
+</head>
+
+<body>
+    <div class="content">
+        <header class="headerAlura">
+            <img src="./images/LogoaluraGeek.svg" alt="Alura Geek">
+        </header>
+
+        <main class="content--main">
+            <section>
+                <h1>Mis Productos:</h1>
+
+                <div class="content--products">
+                    <div class="card">
+                        <img class="card--productimg" src="./images/starwars.png" />
+                        <div class="card-container--info">
+                            <p>Stormtrooper</p>
+                            <div class="card-container--value">
+                                <p>$ 60.00</p>
+                                <button class="delete--btn" data-id="${id}">
+                                    <img src="./images/Vectortrash.png" alt="Eliminar"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card--productimg" src="./images/gameboy.png" />
+                        <div class="card-container--info">
+                            <p>Game Boy Classic</p>
+                            <div class="card-container--value">
+                                <p>$ 60 .00</p>
+                                <button class="delete--btn" data-id="${id}">
+                                    <img src="./images/Vectortrash.png" alt="Eliminar"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card--productimg" src="./images/starwars.png" />
+                        <div class="card-container--info">
+                            <p>Stormtrooper</p>
+                            <div class="card-container--value">
+                                <p>$ 60.00</p>
+                                <button class="delete--btn" data-id="${id}">
+                                    <img src="./images/Vectortrash.png" alt="Eliminar"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content--form">
+                <h1>Agregar Productos:</h1>
+                <form action="" class="form--inputs">
+                    <input type="text" name="" id="name" placeholder="nombre...">
+                    <input type="text" name="" id="price" placeholder="precio...">
+                    <input type="text" name="" id="imgInp" placeholder="imagen...">
+                    <div class="content--form__btn">
+                        <button type="submit" class = "enviar">Enviar</button>
+                        <button type="reset" class = "clean">Limpiar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class = "pie">
+            <span><img src="./images/LogoaluraGeek.svg" alt="Alura Geek"></span>
+            <span>Desarrollado por Luis Leal</span>
+            <span>ALURA LATAM - 2024</span>
+        </footer>
+</body>
+</div>
+
+</html>

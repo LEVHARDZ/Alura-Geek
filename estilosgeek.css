@@ -1,0 +1,171 @@
+/*Globales*/
+*,
+*::before,
+*::after {
+    --morado: rgba(83, 0, 200, 1);
+    --azul: rgba(3, 49, 140, 1);
+    --blanco: rgba(255, 255, 255, 1);
+    --colorbkg: rgba(151, 151, 151, 0.829);
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--colorbkg);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 90%;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado */
+.headerAlura {
+    width: 100%;
+    height: 8vh;
+    align-content: center;
+    background-color: var(--morado);
+    box-shadow: 0px 7px 0.9px 0px var(--colorbkg);
+}
+
+.content--main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    height: 947px;
+    justify-items: center;
+    margin-top: 50px;
+    column-gap: 70px;
+}
+
+/* Productos */
+
+.content--products {
+    width: 678px;
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: -12px 10px 5.8px 0px var(--colorbkg);
+}
+
+.card {
+    max-width: 196px;
+    max-height: 258px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 5px;
+    font-size: 10px;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--morado);
+}
+
+.card--productimg {
+    max-width: 191px;
+    max-height: 174px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 5px;
+}
+
+.card-container--info {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+.card-container--value {
+    display: flex;
+    width: 100%;
+    column-gap: 30px;
+}
+
+.delete--btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.delete--btn img {
+    width: 100%;
+    height: 70%;
+}
+
+/* Formulario */
+
+.content--form {
+    width: 472px;
+}
+
+.form--inputs input::placeholder {
+    color: var(--azul);
+}
+
+#name, #price, #imgInp {
+    margin-top: 40px;
+    color: var(--azul);
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: var(--azul);
+    width: 392px;
+    height: 58px;
+}
+
+.content--form__btn {
+    margin: 40px 0;
+}
+
+.enviar {
+    border-style: none;
+    border-radius: 5px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    width: 188px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.clean {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--azul);
+    background-color: var(--blanco);
+    color: var(--azul);
+    width: 188px;
+    height: 55px;
+    cursor: pointer;
+}
+
+/* footer */
+.pie {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 232px;
+    background-color: var(--morado);
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    color: var(--blanco);
+    line-height: 30px;
+    box-shadow: 0px -10px 9.5px 0px var(--colorbkg);
+}
